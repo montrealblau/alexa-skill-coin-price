@@ -1,0 +1,939 @@
+{
+   "intents": [
+      {
+         "name": "getPrice",
+         "samples": [
+            "what is the price for currency",
+            "how much is currency",
+            "price for currency",
+            "currency price"
+         ],
+         "slots": [
+            {
+               "name": "currency",
+               "type": "cryptocurrency",
+               "samples": []
+            }
+         ]
+      },
+      {
+         "name": "AMAZON.HelpIntent",
+         "samples": []
+      },
+      {
+         "name": "AMAZON.StopIntent",
+         "samples": []
+      },
+      {
+         "name": "AMAZON.CancelIntent",
+         "samples": []
+      }
+   ],
+   "types": [
+      {
+         "name": "cryptocurrency",
+         "values": [
+            {
+               "id": null,
+               "name": {
+                  "value": "BTC",
+                  "synonyms": [
+                     "Bitcoin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "LTC",
+                  "synonyms": [
+                     "Litecoin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "XRP",
+                  "synonyms": [
+                     "Ripple"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "NXT",
+                  "synonyms": [
+                     "Nxt"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "DOGE",
+                  "synonyms": [
+                     "Dogecoin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "DGB",
+                  "synonyms": [
+                     "DigiByte"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "RDD",
+                  "synonyms": [
+                     "ReddCoin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "DASH",
+                  "synonyms": [
+                     "Dash"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "MONA",
+                  "synonyms": [
+                     "MonaCoin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "MAID",
+                  "synonyms": [
+                     "MaidSafeCoin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "XMR",
+                  "synonyms": [
+                     "Monero"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "BCN",
+                  "synonyms": [
+                     "Bytecoin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "BTS",
+                  "synonyms": [
+                     "BitShares"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "XLM",
+                  "synonyms": [
+                     "Stellar"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "SYS",
+                  "synonyms": [
+                     "Syscoin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "EMC",
+                  "synonyms": [
+                     "Emercoin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "XVG",
+                  "synonyms": [
+                     "Verge"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "USDT",
+                  "synonyms": [
+                     "Tether"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "XEM",
+                  "synonyms": [
+                     "NEM"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ETH",
+                  "synonyms": [
+                     "Ethereum"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "SC",
+                  "synonyms": [
+                     "Siacoin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "REP",
+                  "synonyms": [
+                     "Augur"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "DCR",
+                  "synonyms": [
+                     "Decred"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "PIVX",
+                  "synonyms": [
+                     "PIVX"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "LSK",
+                  "synonyms": [
+                     "Lisk"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "DGD",
+                  "synonyms": [
+                     "DigixDAO"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "STEEM",
+                  "synonyms": [
+                     "Steem"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "WAVES",
+                  "synonyms": [
+                     "Waves"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ARDR",
+                  "synonyms": [
+                     "Ardor"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ETC",
+                  "synonyms": [
+                     "Ethereum Classic"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "STRAT",
+                  "synonyms": [
+                     "Stratis"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "NEO",
+                  "synonyms": [
+                     "NEO"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "XZC",
+                  "synonyms": [
+                     "ZCoin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ZEC",
+                  "synonyms": [
+                     "Zcash"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "GNT",
+                  "synonyms": [
+                     "Golem"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "MKR",
+                  "synonyms": [
+                     "Maker"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "KMD",
+                  "synonyms": [
+                     "Komodo"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "NANO",
+                  "synonyms": [
+                     "Nano"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ARK",
+                  "synonyms": [
+                     "Ark"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "QTUM",
+                  "synonyms": [
+                     "Qtum"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "BAT",
+                  "synonyms": [
+                     "Basic Attention Token"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "AE",
+                  "synonyms": [
+                     "Aeternity"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "VERI",
+                  "synonyms": [
+                     "Veritaseum"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "MIOTA",
+                  "synonyms": [
+                     "IOTA"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "BNT",
+                  "synonyms": [
+                     "Bancor"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "GXS",
+                  "synonyms": [
+                     "GXChain"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "FUN",
+                  "synonyms": [
+                     "FunFair"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "SNT",
+                  "synonyms": [
+                     "Status"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "EOS",
+                  "synonyms": [
+                     "EOS"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "GAS",
+                  "synonyms": [
+                     "Gas"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "PPT",
+                  "synonyms": [
+                     "Populous"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "OMG",
+                  "synonyms": [
+                     "OmiseGO"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ETHOS",
+                  "synonyms": [
+                     "Ethos"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "BCH",
+                  "synonyms": [
+                     "Bitcoin Cash"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "BNB",
+                  "synonyms": [
+                     "Binance Coin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "BTM",
+                  "synonyms": [
+                     "Bytom"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "DCN",
+                  "synonyms": [
+                     "Dentacoin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ZRX",
+                  "synonyms": [
+                     "0x"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "HSR",
+                  "synonyms": [
+                     "Hshare"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "VEN",
+                  "synonyms": [
+                     "VeChain"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "NAS",
+                  "synonyms": [
+                     "Nebulas"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "WTC",
+                  "synonyms": [
+                     "Waltonchain"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "LRC",
+                  "synonyms": [
+                     "Loopring"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "TRX",
+                  "synonyms": [
+                     "TRON"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "MANA",
+                  "synonyms": [
+                     "Decentraland"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "KNC",
+                  "synonyms": [
+                     "Kyber Network"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "SUB",
+                  "synonyms": [
+                     "Substratum"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "KIN",
+                  "synonyms": [
+                     "Kin"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ADA",
+                  "synonyms": [
+                     "Cardano"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "RHOC",
+                  "synonyms": [
+                     "RChain"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "CNX",
+                  "synonyms": [
+                     "Cryptonex"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ENG",
+                  "synonyms": [
+                     "Enigma"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "AION",
+                  "synonyms": [
+                     "Aion"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "BTG",
+                  "synonyms": [
+                     "Bitcoin Gold"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "KCS",
+                  "synonyms": [
+                     "KuCoin Shares"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "NULS",
+                  "synonyms": [
+                     "Nuls"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ICX",
+                  "synonyms": [
+                     "ICON"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "QASH",
+                  "synonyms": [
+                     "QASH"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "BCD",
+                  "synonyms": [
+                     "Bitcoin Diamond"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "CMT",
+                  "synonyms": [
+                     "CyberMiles"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ELF",
+                  "synonyms": [
+                     "aelf"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "BIX",
+                  "synonyms": [
+                     "Bibox Token"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "WICC",
+                  "synonyms": [
+                     "WaykiChain"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "MOAC",
+                  "synonyms": [
+                     "MOAC"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "IOST",
+                  "synonyms": [
+                     "IOST"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "THETA",
+                  "synonyms": [
+                     "Theta Token"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "DDD",
+                  "synonyms": [
+                     "Scry.info"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ZIL",
+                  "synonyms": [
+                     "Zilliqa"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ELA",
+                  "synonyms": [
+                     "Elastos"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "POLY",
+                  "synonyms": [
+                     "Polymath"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "HT",
+                  "synonyms": [
+                     "Huobi Token"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "FSN",
+                  "synonyms": [
+                     "Fusion"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "ONT",
+                  "synonyms": [
+                     "Ontology"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "BTCP",
+                  "synonyms": [
+                     "Bitcoin Private"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "LOOM",
+                  "synonyms": [
+                     "Loom Network"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "DROP",
+                  "synonyms": [
+                     "Dropil"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "WAN",
+                  "synonyms": [
+                     "Wanchain"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "MITH",
+                  "synonyms": [
+                     "Mithril"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "CTXC",
+                  "synonyms": [
+                     "Cortex"
+                  ]
+               }
+            },
+            {
+               "id": null,
+               "name": {
+                  "value": "MTC",
+                  "synonyms": [
+                     "Docademic"
+                  ]
+               }
+            }
+         ]
+      }
+   ]
+}

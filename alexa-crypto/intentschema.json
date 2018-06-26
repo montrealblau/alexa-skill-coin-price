@@ -1,0 +1,68 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "getPrice",
+                    "slots": [
+                        {
+                            "name": "VALUE",
+                            "type": "VALUE"
+                        }
+                    ],
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "VALUE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "btch",
+                                "synonyms": [
+                                    "Bitcoin cash"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eth",
+                                "synonyms": [
+                                    "Ethereum",
+                                    "Ether"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "btc",
+                                "synonyms": [
+                                    "Btc",
+                                    "Bitcoin"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
